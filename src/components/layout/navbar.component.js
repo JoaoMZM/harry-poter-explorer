@@ -17,10 +17,10 @@ export default function criarNavbar() {
       <div class="collapse navbar-collapse justify-content-center" id="menu">
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
-            <button class="nav-link fw-bold text-primary active" id="btnHome">Home</button>
+            <button class="nav-link fw-bold text-primary active" id="btn-home">Home</button>
           </li>
           <li class="nav-item">
-            <button class="nav-link" id="btnFavoritos">Favoritos</button>
+            <button class="nav-link" id="btn-favoritos">Favoritos</button>
           </li>
         </ul>
       </div>

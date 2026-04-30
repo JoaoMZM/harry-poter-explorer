@@ -6,7 +6,7 @@ criarNavBar();
 personagensPage();
 
 const btnHome = document.querySelector('#btn-home');
-const btnFavoritos = document.querySelector('#btnFavoritos');
+const btnFavoritos = document.querySelector('#btn-favoritos');
 
 btnHome.addEventListener('click', ()=> {
   ativarMenu(btnHome);
@@ -15,5 +15,7 @@ btnHome.addEventListener('click', ()=> {
 
 btnFavoritos.addEventListener('click', ()=> {
   ativarMenu(btnFavoritos);
-  personagensPage();
+  personagensFavoritosPage();
 });
+
+
