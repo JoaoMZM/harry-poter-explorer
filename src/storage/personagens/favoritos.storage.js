@@ -1,7 +1,11 @@
+export function listarFavoritos() {
+  return JSON.parse(
+    localStorage.getItem('favoritos') || '[]'
+  );
+}
+
 export function salvarFavorito(personagem) {
-    const favoritos = JSON.parse(
-        localStorage.getItem('favoritos') || '[]'
-    );
+    const favoritos = listarFavoritos();
 
     const jaExiste = favoritos.some(
         fav => fav.name === personagem.name
@@ -15,9 +19,7 @@ export function salvarFavorito(personagem) {
 }
 
 export function removerFavorito(personagem) {
-    const favoritos = JSON.parse(
-        localStorage.getItem('favoritos') || '[]'
-    );
+    const favoritos = listarFavoritos();
 
     const favoritosAtualizados = favoritos.filter(
         fav => fav.name !== personagem.name
@@ -27,10 +29,7 @@ export function removerFavorito(personagem) {
 }
 
 export function ehFavorito(personagem) {
-    const favoritos = JSON.parse(
-        localStorage.getItem('favoritos') || '[]'
-    );
-
+    const favoritos = listarFavoritos();
     favoritos.some(
         fav => fav.name === personagem.name
     );

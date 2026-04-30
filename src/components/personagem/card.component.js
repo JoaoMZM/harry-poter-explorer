@@ -25,7 +25,7 @@ export default function criarCardPersonagem(personagem) {
 
     button.addEventListener('click', ()=> {
         favorito = !favorito;
-
+        
         card.classList.toggle('favorito', favorito);
 
         if(favorito) {
